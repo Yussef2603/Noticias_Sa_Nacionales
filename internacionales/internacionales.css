@@ -62,50 +62,45 @@ hr {
     border: 1px solid;
 }
 
-/*** Styling del contenido de la pagina ***/
+/*** Styling del contenido de la página ***/
 section {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 0;
-    gap: 2rem;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
 }
 /* Contenedor de información */
-.contenedor {
-    display: flex;
-    flex-direction: row;
-    height: 305px;
-    width: 80%;
-    gap: 2rem;
-    background: white;
+.container {
+    width: 330px;
+    height: 465px;
+    background-color: white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
-    
-}
-/* Contenedor del video */
-.contenido_video iframe {
-    width: 500px;
-    height: 304px;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-    overflow: hidden;
-}
-/* Contenido del contenedor */
-.contenido_contenedor {
-    width: 80%;
-    padding: 18px 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
 }
 
-.contenido_contenedor #deporte {
+.container p {
     color: red;
     font-weight: 700;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
 }
 
-.contenido_contenedor h2 {
+.container h2 {
     font-size: 30px;
     margin-top: 11px;
-    padding-bottom: 10px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 2rem auto;
+    border-radius: 20px;
+}
+
+.container a {
+    color: blue;
 }
 
 /*** Styling del footer ***/
