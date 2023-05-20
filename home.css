@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-color: #F5F5F5;
 }
+/*Styling del header*/
 
 /*** Navbar styling ***/
 nav {
@@ -13,6 +14,8 @@ nav {
     width: 100%;
     background: rgba(3, 3, 3, 0.8);
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
 nav img {
@@ -41,72 +44,80 @@ nav img {
     color: #FDCE27;
     cursor: pointer;
 }
-
-/*** Styling del contenido del header ***/
-.contenido {
-    padding: 0 2rem;
+#slogan{
+    position: absolute;
+    display: block;
+    top: 180px;
+    left: 28%;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: 35px;
+    > h1{
+        background-color: inherit;
+    }
+    > p{
+        background-color: inherit;
+        margin-left: 14px;
+    }
 }
 
-h1 {
-    font-size: 40px;
+#banner{
+    width: 100%;
+    height: 637px;
+    overflow: hidden;
+    > img {
+        width: 100%;
+        height: 637px;
+        position: absolute;
+        top: 0;
+        opacity: 1;
+    }
 }
 
-.p_header {
-    font-family: 'Voltaire';
-    font-size: 20px;
-}
-
-hr {
-    width: 50%;
-    margin: 0;
-    border: 1px solid;
-}
-
-/*** Styling del contenido de la página ***/
-section {
+/*Styling de la sección de noticias*/
+section{
     display: flex;
     flex-direction: row;
-    padding: 2rem;
-    justify-content: space-around;
+    align-items: center;
+    column-gap: 8vh;
+    height: 750px;
+    justify-content: space-evenly;
 }
-/* Contenedor de información */
-.container {
-    width: 330px;
-    height: 465px;
-    background-color: white;
+.noticia{
+    width: 400px;
+    height: 580px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
+    border-radius: 48px;
+    overflow: hidden;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    padding: 6vh;
 }
-
-.container p {
-    color: red;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-
-.container h2 {
-    font-size: 30px;
-    margin-top: 11px;
-}
-
-.container img {
+.imagen{
     width: 100%;
     height: auto;
-    margin: 0 auto 2rem auto;
     border-radius: 20px;
+    box-shadow: 3px 2px 5px rgb(90, 87, 87);
 }
-
-.container a {
-    color: blue;
-    display: inline-block;
+.rojo{
+    color: red;
+    font-weight: 700;
+    margin-top: 0px;
 }
-.container a:hover {
-    color: lightskyblue
+.titulo{
+    font-size: 25px;
+    margin-top: -10px;
+    font-weight: bold;
 }
-.container a:active {
+.descripcion{
+    width: 100%;
+    font-weight: 500;
+}
+.read-more:hover{
+    color: lightskyblue;
+    cursor: pointer;
+}
+.read-more:active{
     color: #FDCE27;
 }
 
