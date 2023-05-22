@@ -28,30 +28,6 @@ nav img {
     margin: auto 0;
     padding: 0;
 }
-
-/*** Listado de paginas en el navbar ***/
-.lista ul {
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-}
-
-.lista a {
-    text-decoration: none;
-    font-weight: 700;
-    color: white;
-    font-size: 20px;
-}
-
-.lista li {
-    list-style: none;
-}
-
-.lista a:hover {
-    color: #FDCE27;
-    cursor: pointer;
-}
-
 /*** Styling del contenido del header ***/
 .contenido {
     padding: 0 2rem;
