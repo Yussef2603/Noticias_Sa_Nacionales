@@ -1,0 +1,159 @@
+body {
+    font-family: 'Urbanist';
+    margin: 0;
+    background-color: #F5F5F5;
+}
+
+/*** Navbar styling ***/
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 45rem;
+    height: 84px;
+    width: 100%;
+    background: rgba(3, 3, 3, 0.8);
+    align-items: center;
+}
+
+nav img {
+    padding-left: 2rem;
+    width: 100px;
+    height: 84px;
+}
+
+/*** Listado de paginas en el navbar ***/
+.lista ul {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.lista a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    font-size: 20px;
+}
+
+.lista li {
+    list-style: none;
+}
+
+.lista a:hover {
+    color: #FDCE27;
+    cursor: pointer;
+}
+
+/*** Styling del contenido del header ***/
+.contenido {
+    padding: 0 2rem;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.p_header {
+    font-family: 'Voltaire';
+    font-size: 20px;
+}
+
+hr {
+    width: 50%;
+    margin: 0;
+    border: 1px solid;
+}
+
+/*** Styling del contenido de la página ***/
+section {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    justify-content: space-around;
+}
+/* Contenedor de información */
+.container {
+    width: 330px;
+    height: 465px;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.container p {
+    color: rgb(63, 63, 63);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.container h2 {
+    font-size: 30px;
+    margin-top: 11px;
+}
+
+.container img {
+    width: 90%;
+    height: 280px;
+    margin: 0 auto 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container a {
+    color: blue;
+    display: inline-block;
+}
+.container a:hover {
+    color: lightskyblue
+}
+.container a:active {
+    color: #FDCE27;
+}
+
+/*** Styling del footer ***/
+footer {
+    height: 211px;
+    background: rgba(3, 3, 3, 0.8);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* Listado de paginas */
+.lista_footer ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 8rem;
+    gap: 1rem;
+}
+
+.lista_footer li {
+    list-style: none;
+}
+
+.lista_footer a {
+    text-decoration: none;
+    font-weight: 700;
+    color: rgba(255, 248, 243, 0.59);
+    font-size: 15px;
+}
+
+.lista_footer a:hover {
+    color: rgba(253, 206, 39, 0.59);
+    cursor: pointer;
+}
+
+.logo_footer p {
+    padding-right: 8rem ;
+    font-weight: 700;
+    color: rgba(255, 248, 243, 0.59);
+    font-size: 12px;
+}
+.logo_footer img{
+    width: 100px;
+    height: 84px; 
+}
