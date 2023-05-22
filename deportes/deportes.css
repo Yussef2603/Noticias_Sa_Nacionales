@@ -8,17 +8,27 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    gap: 45rem;
-    height: 84px;
+    gap: 42rem;
+    height: 100px;
     width: 100%;
     background: rgba(3, 3, 3, 0.8);
     align-items: center;
 }
 
-nav img {
+
+/* Styling del logo */
+.logo {
+    width: 90px;
+    height: auto;
     padding-left: 2rem;
 }
 
+nav img {
+    width: 100%;
+    border-radius: 25%;
+    margin: auto 0;
+    padding: 0;
+}
 /*** Listado de paginas en el navbar ***/
 .lista ul {
     display: flex;
@@ -141,10 +151,17 @@ footer {
     color: rgba(253, 206, 39, 0.59);
     cursor: pointer;
 }
-
+/* Styling del logo en el footer */
 .logo_footer p {
     padding-right: 8rem ;
     font-weight: 700;
     color: rgba(255, 248, 243, 0.59);
     font-size: 12px;
+}
+/* Styling del logo en el footer */
+.logo_footer img {
+    padding-left: 0.5rem;
+    width: 78px;
+    border-radius: 25%;
+    margin: auto;
 }
